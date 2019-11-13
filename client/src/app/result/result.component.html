@@ -1,0 +1,6 @@
+<div>
+  <h3 *ngIf="!user; else dataUser">User details not found</h3>
+  <ng-template #dataUser>
+    <h3>{{ user.firstName }} {{ user.lastName }}'s {{ detail }}: {{ user[detail] }}</h3>
+  </ng-template>
+</div>
